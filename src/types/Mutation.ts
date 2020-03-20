@@ -43,7 +43,7 @@ export const Mutation = mutationType({
         if (!user) {
           throw new Error(`No user found for email: ${email}`)
         }
-        const passwordValid = await compare(password, user.password)
+        const passwordValid = await compare(password, user.password as string)
         if (!passwordValid) {
           throw new Error('Invalid password')
         }
