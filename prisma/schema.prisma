@@ -16,13 +16,13 @@ model Post {
   author  User
 }
 
-model spatial_ref_sys {
-  auth_name String?
-  auth_srid Int?
-  proj4text String?
-  srid      Int     @id
-  srtext    String?
-}
+// model spatial_ref_sys {
+//   auth_name String?
+//   auth_srid Int?
+//   proj4text String?
+//   srid      Int     @id
+//   srtext    String?
+// }
 
 model User {
   email    String     @unique
